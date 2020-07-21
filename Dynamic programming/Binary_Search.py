@@ -1,4 +1,16 @@
-data = [1, 7, 17, 18, 27, 29, 30, 35, 39, 41, 63, 63, 66, 67, 78, 82, 91, 92]
+import random
+
+def random_list(start,end,length):
+    data_list = []
+    for i in range(length):
+        data_list.append(random.randint(start,end))
+    return data_list
+
+data = random_list(1,100,10)
+data = sorted(data)
+
+
+# data = [1, 7, 17, 18, 27, 29, 30, 35, 39, 41, 63, 63, 66, 67, 78, 82, 91, 92]
 
 # 二分查找：折半查找（针对有序数组）
 
@@ -24,6 +36,8 @@ def search(data_list,target):
 
 
 def search2(left, right, data_list, target):
+    if left > right:
+        return -1
     mid = int((left + right) / 2)
     if data_list[mid] == target:
         return mid
@@ -36,11 +50,21 @@ def search2(left, right, data_list, target):
 
 
 if __name__ == "__main__":
-    # pos = search(data,100)
-    pos = search2(0,len(data)-1,data, 29)
+    # # pos = search(data,100)
+    # pos = search2(0,len(data)-1,data, 29)
+    # if pos >= 0 :
+    #     print("查询到数据，所在位置：{}".format(pos))
+    # else:
+    #     print("目标值不在列表中")
+    print('data:',data)
+    target = random.randint(0,len(data)-1)
+    print('data[target]:',data[target])
+    pos = search2(0, len(data) - 1, data, data[target])
     if pos >= 0 :
         print("查询到数据，所在位置：{}".format(pos))
     else:
         print("目标值不在列表中")
+
+
 
 
