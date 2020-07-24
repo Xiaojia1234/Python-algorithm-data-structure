@@ -10,3 +10,5 @@ def jc(n):
 
 if __name__ == "__main__":
     print(jc(10))
+
+
