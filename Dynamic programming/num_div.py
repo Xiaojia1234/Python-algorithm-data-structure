@@ -27,6 +27,7 @@ def search(rest):
             search(rest-i)
             datas.pop()
 
+
 if __name__ == "__main__":
     search(num)
     print("共有{}种数字组合".format(total))
