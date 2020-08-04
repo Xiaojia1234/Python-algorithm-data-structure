@@ -12,6 +12,7 @@ pyramid = [
     [12,7,13,24,11]
 ]
 
+
 datas = [13]
 total_path = []
 def search(depth,x,y):
