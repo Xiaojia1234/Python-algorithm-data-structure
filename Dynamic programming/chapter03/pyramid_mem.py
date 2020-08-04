@@ -10,7 +10,7 @@ pyramid = [
     [11,8],
     [12,7,26],
     [6,14,15,8],
-    [12,7,13,24,11]
+    [12,17,13,24,11]
 ]
 
 
@@ -57,5 +57,5 @@ def search_min(depth,y):
 if __name__ == "__main__":
     print(search_max(0,0))
     print(info)
-    print(search_min(0,0))
+    print(search_min(2,0))
     print(info2)
