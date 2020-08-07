@@ -69,4 +69,3 @@ for k in range(len(values)-1,-1,-1):
     pre_max = new_pre_max
 
 print(pre_max)
-
