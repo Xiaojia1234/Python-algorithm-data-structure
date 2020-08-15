@@ -38,6 +38,8 @@ for i in range(info[-1][0], total+1):
 #     new_pre_max2.append(max(value_list))
 
 
+
+
 # 自底向上
 for k in range(len(info)-1, -1, -1):
     # pre_max存储每一层剩余空间对应得最大价值的list
